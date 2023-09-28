@@ -10,19 +10,19 @@ public class Test {
 
 		
 		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");
+		cfg.configure("model/hibernat.cfg.xml");
 		
 		
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 		
-		Student s=new Student(103,"ram","java");
+		Student s=new Student(104,"ram","Nandanavan");
 		
-		Transaction tx = session.beginTransaction();
+		Transaction t = session.beginTransaction();
 		
 		session.save(s);
 
-		tx.commit();
+		t.commit();
 		session.close();
 		
 		System.out.println("Data inserted");

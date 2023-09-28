@@ -11,8 +11,11 @@
 <property name="connection.password">abc123</property>
 
 <property name="show_sql">true</property>
-<property name="dialet">org.hibernate.dialect.MySQLDialect</property>
+<property name="dialet">org.hibernate.dialect.MYSQLDialect</property>
 <property name="hbm2ddl.auto">update</property>
-<mapping resource="student.hbm.xml" />
+<mapping resource="model/student.hbm.xml" />
 </session-factory>
 </hibernate-configuration>
+
+
+
