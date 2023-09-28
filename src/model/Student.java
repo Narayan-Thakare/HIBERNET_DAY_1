@@ -3,7 +3,7 @@ package model;
 public class Student {
 	
 	private int roll; 
-	private String name, course;
+	private String name, address;
 	
 	
 	public Student() {
@@ -11,18 +11,18 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(String name, String course) {
+	public Student(String name, String address) {
 		super();
 		this.name = name;
-		this.course = course;
+		this.address = address;
 	}
 
 
-	public Student(int roll, String name, String course) {
+	public Student(int roll, String name, String address) {
 		super();
 		this.roll = roll;
 		this.name = name;
-		this.course = course;
+		this.address = address;
 	}
 	
 	
@@ -38,11 +38,11 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCourse() {
-		return course;
+	public String getaddress() {
+		return address;
 	}
-	public void setCourse(String course) {
-		this.course = course;
+	public void setaddress(String address) {
+		this.address = address;
 	}
 	
 	

@@ -9,7 +9,7 @@
 <generator class="assigned" />
 </id>
 <property name="name" column="name" />
-<property name="course"/>
+<property name="address"/>
 </class>
 
 </hibernate-mapping>
